@@ -1,0 +1,136 @@
+<! DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="script.js"></script>
+</head>
+<body onload="loadAtStart()">
+    
+    <header class="header">
+        <div class="heading-area">
+            <h2 id="main-heading"><a onclick="sectionSelected(event)" id="homeClick" href="#">SHOP</a></h2>
+            <span class="cart-area">
+                <i class="fa fa-shopping-cart"></i>
+                <p id="cartCounter" class="rounded">1</p>
+            </span>
+        </div>
+        <!-- Navigation Area for selecting an specific item -->
+        <i id="ham" class="fa fa-hamburger"></i>
+        <nav class="navigation-area">
+            <ul>
+                <li class="category-list-item"><a onclick="sectionSelected(event)" id="mensOutwearClick" href="#">Men's Outerwear</a></li>
+                <li class="category-list-item"><a onclick="sectionSelected(event)" id="ladiesOutwearClick" href="#">Ladies Outerwear</a></li>
+                <li class="category-list-item"><a onclick="sectionSelected(event)" id="mensTshirtsClick" href="#">Men's T-Shirts</a></li>
+                <li class="category-list-item"><a onclick="sectionSelected(event)" id="ladiesTshirtsClick" href="#">Ladies T-Shirts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main id="mainBody">
+        <section class="outwear-section">
+            <div class="mens-outwear-section">
+                <div class="carosel-area-men">
+
+                </div>
+                <span class="normal-text">Men's Hoodies</span>
+                <button class="btn">
+                    SHOP NOW
+                </button>
+            </div>
+            <div class="ladies-outwear-section">
+                <div class="ladies-outwear-display">
+                        <img src="Assets/hoodies-ladies/cover.jpg">
+                </div>
+                <span class="normal-text">Ladies Hoodies</span>
+                <button class="btn">
+                    SHOP NOW
+                </button>
+            </div>
+        </section>
+        <section class="t-shirt-section">
+            <div class="mens-t-shirt-section">
+                <div class="mens-t-shirt-display">
+                    <img src="Assets/tshirt-men/cover.jpg">
+                </div>
+                <span class="normal-text">Men's T-Shirts</span>
+                <button class="btn">
+                    SHOP NOW
+                </button>
+            </div>
+            <div class="ladies-t-shirt-section">
+                <div class="ladies-t-shirt-display">
+                        <img src="Assets/tshirt-ladies/cover.jpeg">
+                </div>
+                <span class="normal-text">Ladies T-Shirts</span>
+                <button class="btn">
+                    SHOP NOW
+                </button>
+            </div>
+        </section>
+    </main>
+
+
+
+    <main id="mensOutwearBody" class="hidden">
+            <div class="men-outwear-display">
+                <img src="Assets/hoodies-men/cover.jpg">
+            </div>
+            <span class="normal-text">Men's Hoodies</span>
+            <span id="menOuterCount" class="normal-text light-grey"></span>
+            <div id="mensOuterContainer" class="item-container">
+
+            </div>
+    </main>
+    <main id="ladiesOutwearBody"  class="hidden">
+            <div class="ladies-outwear-display">
+                <img src="Assets/hoodies-ladies/cover.jpg">
+            </div>
+            <span class="normal-text">Ladies Hoodies</span>
+            <span id="ladiesOuterCount" class="normal-text light-grey"></span>
+            <div id="ladiesOuterContainer" class="item-container">
+                
+            </div>
+    </main>
+    <main id="mensTshirtBody"  class="hidden">
+            <div class="mens-t-shirt-display cover-display">
+                <img src="Assets/tshirt-men/cover.jpg">
+            </div>
+            <span class="normal-text">Men's T-Shirts</span>
+            <span id="mensTshirtCount" class="normal-text light-grey"></span>
+            <div id="mensTshirtContainer" class="item-container">
+                
+            </div>
+    </main>
+    <main id="ladiesTshirtBody"  class="hidden">
+            <div class="ladies-t-shirt-display cover-display">
+                <img src="Assets/tshirt-ladies/cover.jpeg">
+            </div>
+            <span class="normal-text">Ladies T-Shirts</span>
+            <span id="ladiesTshirtCount" class="normal-text light-grey"></span>
+            <div id="ladiesTshirtContainer" class="item-container">
+                
+            </div>
+    </main>
+    
+
+
+
+
+    <footer class="footer">
+        <span class="normal-text light-grey">
+            Made By Manjil
+        </span>
+        <button class="btn btn-dark">
+            DEMO ONLY
+        </button>
+    </footer>
+
+
+</body>
+</html>
